@@ -37,7 +37,7 @@ gem "thruster", require: false
 
 gem 'devise'
 gem 'sidekiq'
-gem 'sidekiq-cron'
+# gem 'sidekiq-cron'
 gem 'redis'
 gem 'paper_trail'
 
