@@ -103,10 +103,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-<<<<<<< Updated upstream
     diff-lcs (1.6.2)
-=======
->>>>>>> Stashed changes
     dotenv (3.1.8)
     drb (2.2.3)
     ed25519 (1.4.0)
@@ -256,7 +253,6 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
-<<<<<<< Updated upstream
     rspec-core (3.13.5)
       rspec-support (~> 3.13.0)
     rspec-expectations (3.13.5)
@@ -285,8 +281,6 @@ GEM
     rswag-ui (2.16.0)
       actionpack (>= 5.2, < 8.1)
       railties (>= 5.2, < 8.1)
-=======
->>>>>>> Stashed changes
     rubocop (1.79.2)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
@@ -323,14 +317,6 @@ GEM
       logger (>= 1.6.2)
       rack (>= 3.1.0)
       redis-client (>= 0.23.2)
-<<<<<<< Updated upstream
-=======
-    sidekiq-cron (2.3.1)
-      cronex (>= 0.13.0)
-      fugit (~> 1.8, >= 1.11.1)
-      globalid (>= 1.0.1)
-      sidekiq (>= 6.5.0)
->>>>>>> Stashed changes
     solid_cable (3.0.11)
       actioncable (>= 7.2)
       activejob (>= 7.2)
@@ -391,28 +377,19 @@ DEPENDENCIES
   brakeman
   debug
   devise
-<<<<<<< Updated upstream
   faker
   groupdate (~> 6.7)
-=======
->>>>>>> Stashed changes
   kamal
   paper_trail
   puma (>= 5.0)
   rails (~> 8.0.2)
   redis
-<<<<<<< Updated upstream
   rspec-rails
   rswag-api
   rswag-specs
   rswag-ui
   rubocop-rails-omakase
   sidekiq
-=======
-  rubocop-rails-omakase
-  sidekiq
-  sidekiq-cron
->>>>>>> Stashed changes
   solid_cable
   solid_cache
   solid_queue

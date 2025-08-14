@@ -21,9 +21,10 @@ puts "Creando administradores..."
 admin_users = []
 3.times do |i|
   admin_users << AdminUser.create!(
-    email: "admin#{i+1}@example.com",
-    password: "password123",
-    role: "admin" # asumiendo que tienes un campo role
+    first_name: Faker::Name.first_name,
+    last_name: Faker::Name.last_name,
+    email: Faker::Internet.unique.email,
+    password_digest: "password123"
   )
 end
 
