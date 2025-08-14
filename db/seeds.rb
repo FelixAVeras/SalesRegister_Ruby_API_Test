@@ -14,13 +14,13 @@ puts "Eliminando datos previos..."
 Purchase.destroy_all
 Product.destroy_all
 Category.destroy_all
-Client.destroy_all
-User.destroy_all
+Customer.destroy_all
+AdminUser.destroy_all
 
 puts "Creando administradores..."
 admin_users = []
 3.times do |i|
-  admin_users << User.create!(
+  admin_users << AdminUser.create!(
     email: "admin#{i+1}@example.com",
     password: "password123",
     role: "admin" # asumiendo que tienes un campo role
@@ -61,9 +61,9 @@ products = []
 end
 
 puts "Creando clientes..."
-clients = []
+customers = []
 10.times do
-  clients << Client.create!(
+  customers << Customer.create!(
     name: Faker::Name.name,
     email: Faker::Internet.email,
     phone: Faker::PhoneNumber.cell_phone
