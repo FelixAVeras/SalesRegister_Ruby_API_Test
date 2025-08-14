@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< Updated upstream
 ActiveRecord::Schema[8.0].define(version: 2025_08_13_161753) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -39,11 +40,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_08_13_161753) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+=======
+ActiveRecord::Schema[8.0].define(version: 2025_08_12_223251) do
+>>>>>>> Stashed changes
   create_table "categories", force: :cascade do |t|
     t.string "category_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+<<<<<<< Updated upstream
 
   create_table "categorizations", force: :cascade do |t|
     t.integer "category_id", null: false
@@ -112,4 +117,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_08_13_161753) do
   add_foreign_key "products", "admin_users", column: "creator_id"
   add_foreign_key "purchases", "customers"
   add_foreign_key "purchases", "products"
+=======
+>>>>>>> Stashed changes
 end
